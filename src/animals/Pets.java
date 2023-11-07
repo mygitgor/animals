@@ -5,7 +5,7 @@ public class Pets extends Animals {
     //имена, даты рождения, выполняемые команды и т.д
     private String comand;
 
-    public Pets(String name, String data) {
+    public Pets(String name, String data, String comand) {
         super(name, data);
         this.comand = comand;
     }

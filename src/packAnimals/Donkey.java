@@ -1,5 +1,11 @@
 package packAnimals;
 
-public class Donkey {
+import animals.PackAnimals;
+
+public class Donkey extends PackAnimals{
+
+    public Donkey(String name, String data, int cargoCapacity) {
+        super(name, data, cargoCapacity);
+    }
     
 }

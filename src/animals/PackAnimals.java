@@ -6,7 +6,7 @@ public class PackAnimals extends Animals{
 
     private int cargoCapacity;
 
-    public PackAnimals(String name, String data) {
+    public PackAnimals(String name, String data, int cargoCapacity) {
         super(name, data);
         this.cargoCapacity = cargoCapacity;
     }
