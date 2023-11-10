@@ -4,19 +4,20 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import homePets.Cat;
-import homePets.Dog;
-import homePets.Hamster;
-import packAnimals.Camel;
-import packAnimals.Donkey;
-import packAnimals.Horse;
-
 public class HumanFriends implements Serializable {
    
     private List<Animals> humanFriendsList;
 
     public HumanFriends() {
         this(new ArrayList<>());
+    }
+
+    public void createHomePets( String name, String data, String comand) {
+        humanFriendsList.add(new Pets(name, data, comand));
+    }
+
+    public void createPackAnimals(String name, String data, int cargoCapacity) {
+        humanFriendsList.add(new PackAnimals(name, data, cargoCapacity));
     }
 
     public HumanFriends(List<Animals> humanFriendsList) {

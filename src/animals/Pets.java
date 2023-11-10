@@ -1,12 +1,5 @@
 package animals;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import homePets.Cat;
-import homePets.Dog;
-import homePets.Hamster;
-
 public class Pets extends Animals  {
     //домашние питомцы
     //собаки, кошки, хомяки, 

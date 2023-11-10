@@ -1,7 +1,5 @@
 package animals;
 
-import java.util.List;
-
 public class PackAnimals extends Animals {
     //Вьючные животные
     //Лошади, верблюды и ослы
