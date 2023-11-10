@@ -7,7 +7,6 @@ public class PackAnimals extends Animals {
     //Лошади, верблюды и ослы
     //имена, даты рождения, выполняемые команды и т.д
     private int cargoCapacity;
-    public List<PackAnimals> PackAnimalsList;
 
     public PackAnimals(String name, String data, int cargoCapacity) {
         super(name, data);
@@ -24,21 +23,8 @@ public class PackAnimals extends Animals {
 
     @Override
     public String toString(){
-        return super.toString() + " PackAnimalsListInfo: \n" + getPackAnimalsListInfo();
+        return super.toString() + ", cargoCapacity: " + getCargoCapacity();
     }
 
-    private String getPackAnimalsListInfo(){
-        String ret = "PackAnimals:\n";
-        if (PackAnimalsList.size() > 0){
-            for (PackAnimals packAnimals : PackAnimalsList){
-                ret+= packAnimals.getName();
-                ret+= packAnimals.getData();  
-                ret+= packAnimals.getCargoCapacity();  
-            }
-        }else{
-            ret+= "none";
-        }
-        return ret;
-    }
 
 }

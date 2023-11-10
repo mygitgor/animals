@@ -8,4 +8,9 @@ public class Horse extends PackAnimals{
         super(name, data, cargoCapacity);
     }
     
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
 }
