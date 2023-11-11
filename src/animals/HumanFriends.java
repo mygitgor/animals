@@ -12,12 +12,12 @@ public class HumanFriends implements Serializable {
         this(new ArrayList<>());
     }
 
-    public void createHomePets( String name, String data, String comand) {
-        humanFriendsList.add(new Pets(name, data, comand));
+    public void createHomePets( String name, String type, String data, String comand) {
+        humanFriendsList.add(new Pets( name, type, data, comand));
     }
 
-    public void createPackAnimals(String name, String data, int cargoCapacity) {
-        humanFriendsList.add(new PackAnimals(name, data, cargoCapacity));
+    public void createPackAnimals(String name, String type, String data, int cargoCapacity) {
+        humanFriendsList.add(new PackAnimals(name, type, data, cargoCapacity));
     }
 
     public HumanFriends(List<Animals> humanFriendsList) {

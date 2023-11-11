@@ -4,13 +4,18 @@ import animals.Pets;
 
 public class Dog extends Pets{
 
-    public Dog(String name, String data, String comand) {
-        super(name, data, comand);
+    public Dog(String name, String type, String data, String comand) {
+        super(name, type, data, comand);
     }
 
     @Override
     public String getComand() {
         return super.getComand();
+    }
+
+    @Override
+    public String getType() {
+        return super.getType();
     }
 
     @Override
@@ -25,6 +30,6 @@ public class Dog extends Pets{
     
     @Override
     public String toString() {
-        return super.toString()+ " comand: " + getComand();
+        return super.toString()+ " comand: " + getComand() + ", type: " + getType();
     }
 }

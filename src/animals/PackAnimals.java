@@ -5,14 +5,20 @@ public class PackAnimals extends Animals {
     //Лошади, верблюды и ослы
     //имена, даты рождения, выполняемые команды и т.д
     private int cargoCapacity;
+    private String type;
 
-    public PackAnimals(String name, String data, int cargoCapacity) {
+    public PackAnimals(String name, String type, String data, int cargoCapacity) {
         super(name, data);
         this.cargoCapacity = cargoCapacity;
+        this.type = type;
     }
 
     public int getCargoCapacity() {
         return cargoCapacity;
+    }
+
+    public String getType() {
+        return type;
     }
 
     public void setCargoCapacity(int cargoCapacity) {
@@ -21,7 +27,7 @@ public class PackAnimals extends Animals {
 
     @Override
     public String toString(){
-        return super.toString() + ", cargoCapacity: " + getCargoCapacity();
+        return super.toString() + ", cargoCapacity: " + getCargoCapacity() + ", type: " + getType();
     }
 
 

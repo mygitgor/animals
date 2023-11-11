@@ -4,8 +4,8 @@ import animals.Pets;
 
 public class Hamster extends Pets{
 
-    public Hamster(String name, String data, String comand) {
-        super(name, data, comand);
+    public Hamster(String name, String type, String data, String comand) {
+        super(name, type, data, comand);
     }
     
     @Override
@@ -14,6 +14,10 @@ public class Hamster extends Pets{
     }
 
     @Override
+    public String getType() {
+        return super.getType();
+    }
+
     public String getData() {
         return super.getData();
     }
@@ -25,7 +29,7 @@ public class Hamster extends Pets{
 
     @Override
     public String toString() {
-        return super.toString()+ " comand: " + getComand();
+        return super.toString()+ " comand: " + getComand() + ", type: " + getType();
     }
 
 }

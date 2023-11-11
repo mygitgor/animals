@@ -4,8 +4,8 @@ import animals.PackAnimals;
 
 public class Horse extends PackAnimals{
 
-    public Horse(String name, String data, int cargoCapacity) {
-        super(name, data, cargoCapacity);
+    public Horse(String name,String type, String data, int cargoCapacity) {
+        super(name, type, data, cargoCapacity);
     }
     
     @Override
