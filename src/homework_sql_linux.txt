@@ -1,0 +1,40 @@
+➜  ~ echo "Собаки, кошки, хомяки" > Pets.txt         
+➜  ~ echo "Лошади, верблюды, ослы" > PackAnimals.txt
+➜  ~ cat Pets.txt PackAnimals.txt > HumanFriends.txt
+➜  ~ cat HumanFriends.txt
+Собаки, кошки, хомяки
+Лошади, верблюды, ослы
+➜  ~ mv HumanFriends.txt "Human Friends.txt"
+➜  ~ vim homework_makarcev.txt              
+➜  ~ mkdir NewDirectory
+➜  ~ mv "Human Friends.txt" NewDirectory/
+➜  ~ 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 11
+Server version: 8.0.35-0ubuntu0.22.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> CREATE DATABASE animal;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> USE animal;
+Database changed
+mysql> CREATE TABLE HumanFriends (id INT primary key,
+    -> name VARCHAR(50),
+    -> birthdate DATE);
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> INSERT INTO HumanFriends(id, name, birthdate)
+    -> VALUES(1,'собака', '2023-02-10'),(2,'кошка','2000-02-13')
+    -> ,(3,'хомяк','2004-04-15');
+Query OK, 3 rows affected (0.05 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql> 
